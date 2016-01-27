@@ -14,3 +14,69 @@ set bi 0,
 eval,
 output;
 
+set d 00,
+set t 0,
+set bi 1,
+eval,
+output;
+
+set d 00,
+set t 1,
+set bi 0,
+eval,
+output;
+
+set d 00,
+set t 1,
+set bi 1,
+eval,
+output;
+
+set d 01,
+set t 0,
+set bi 0,
+eval,
+output;
+
+set d 01,
+set t 0,
+set bi 1,
+eval,
+output;
+
+set d 01,
+set t 1,
+set bi 0,
+eval,
+output;
+
+set d 01,
+set t 1,
+set bi 1,
+eval,
+output;
+
+set d 10,
+set t 0,
+set bi 0,
+eval,
+output;
+
+set d 10,
+set t 0,
+set bi 1,
+eval,
+output;
+
+set d 10,
+set t 1,
+set bi 0,
+eval,
+output;
+
+set d 10,
+set t 1,
+set bi 1,
+eval,
+output;
+
