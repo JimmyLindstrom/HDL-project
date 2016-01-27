@@ -6,38 +6,11 @@
 load Tea.hdl,
 output-file Tea.out,
 compare-to Tea.cmp,
-output-list in%B2.1.2 sel%B2.2.2 a%B2.1.2 b%B2.1.2 c%B2.1.2 d%B2.1.2;
+output-list d%B2.2.2 t%B2.1.2 bi%B2.1.2 bl%B2.1.2 m%B2.1.2;
 
-set in 0,
-set sel %B00,
+set d 00,
+set t 0,
+set bi 0,
 eval,
 output;
 
-set sel %B01,
-eval,
-output;
-
-set sel %B10,
-eval,
-output;
-
-set sel %B11,
-eval,
-output;
-
-set in 1,
-set sel %B00,
-eval,
-output;
-
-set sel %B01,
-eval,
-output;
-
-set sel %B10,
-eval,
-output;
-
-set sel %B11,
-eval,
-output;

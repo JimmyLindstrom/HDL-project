@@ -1,18 +1,22 @@
 
 /**
  * Tea:
- * {a, b, c, d, e, f, g, h} = {in, 0, 0, 0, 0, 0, 0, 0} if sel == 000
- *                            {0, in, 0, 0, 0, 0, 0, 0} if sel == 001
- *                            etc.
- *                            {0, 0, 0, 0, 0, 0, 0, in} if sel == 111
+ * 
  */
 
 CHIP Tea {
-    IN sel[2], t, bi;
+    IN d[2], t, bi;
     OUT bl, m;
 
     PARTS:
-	Or(a=t, b=bi, out=tbi);
-	DMux4Way(in=tbi, a=a, b=b, c=c, d=d, sel[0]=sel[0], sel[1]=sel[1]);
-	//Mux();
+	Not(in=d[0], out=notd1);
+	Not(in=d[1], out=notd2);
+	And(a=notd1, b=notd2, out=ada);
+	And(a=d[0], b=notd2, out=george);
+	Not(in=t, out=nott);
+	And(a=notd1, b=d[1], out=milk);
+	And(a=george, b=bi, out=bis);
+	Or(a=milk, b=bis, out=m);
+	And(a=ada, b=nott, out=bl);
+	
 }
