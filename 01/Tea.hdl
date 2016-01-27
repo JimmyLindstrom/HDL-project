@@ -9,14 +9,14 @@ CHIP Tea {
     OUT bl, m;
 
     PARTS:
-	Not(in=d[0], out=notd1);
-	Not(in=d[1], out=notd2);
-	And(a=notd1, b=notd2, out=ada);
-	And(a=d[0], b=notd2, out=george);
+	Not(in=d[1], out=notd1);
+	Not(in=d[0], out=notd0);
 	Not(in=t, out=nott);
-	And(a=notd1, b=d[1], out=milk);
-	And(a=george, b=bi, out=bis);
-	Or(a=milk, b=bis, out=m);
+	And(a=notd1, b=notd0, out=ada);
 	And(a=ada, b=nott, out=bl);
+	And(a=notd1, b=d[0], out=charles);
+	And(a=d[1], b=notd0, out=george);
+	And(a=george, b=bi, out=bigeorge);
+	Or(a=charles, b=bigeorge, out=m);
 	
 }

@@ -8,73 +8,73 @@ output-file Tea.out,
 compare-to Tea.cmp,
 output-list d%B2.2.2 t%B2.1.2 bi%B2.1.2 bl%B2.1.2 m%B2.1.2;
 
-set d 00,
+set d %B00,
 set t 0,
 set bi 0,
 eval,
 output;
 
-set d 00,
-set t 0,
-set bi 1,
-eval,
-output;
-
-set d 00,
-set t 1,
-set bi 0,
-eval,
-output;
-
-set d 00,
-set t 1,
-set bi 1,
-eval,
-output;
-
-set d 01,
-set t 0,
-set bi 0,
-eval,
-output;
-
-set d 01,
+set d %B00,
 set t 0,
 set bi 1,
 eval,
 output;
 
-set d 01,
+set d %B00,
 set t 1,
 set bi 0,
 eval,
 output;
 
-set d 01,
+set d %B00,
 set t 1,
 set bi 1,
 eval,
 output;
 
-set d 10,
+set d %B01,
 set t 0,
 set bi 0,
 eval,
 output;
 
-set d 10,
+set d %B01,
 set t 0,
 set bi 1,
 eval,
 output;
 
-set d 10,
+set d %B01,
 set t 1,
 set bi 0,
 eval,
 output;
 
-set d 10,
+set d %B01,
+set t 1,
+set bi 1,
+eval,
+output;
+
+set d %B10,
+set t 0,
+set bi 0,
+eval,
+output;
+
+set d %B10,
+set t 0,
+set bi 1,
+eval,
+output;
+
+set d %B10,
+set t 1,
+set bi 0,
+eval,
+output;
+
+set d %B10,
 set t 1,
 set bi 1,
 eval,
